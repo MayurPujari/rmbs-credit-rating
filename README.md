@@ -35,7 +35,8 @@ This web application designed to calculate the credit rating of a Residential Mo
 
 # Create and activate virtual environment
 python -m venv env
-source env/bin/activate  # or env\Scripts\activate on Windows
+source env/bin/activate  or 
+env\Scripts\activate on Windows
 
 # Install dependencies
 pip install -r requirements.txt
@@ -47,7 +48,7 @@ cd credit_rating
 python manage.py migrate
 python manage.py runserver
 
-### Frontend (React)
+# Frontend (React)
 
 
 # Navigate to frontend
@@ -114,3 +115,4 @@ json
     "property_type": "condo"
   }
 ]
+

@@ -1,23 +1,52 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# === Node.js / React ===
+node_modules/
+build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# === Environment Files ===
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# === Mac System Files ===
+.DS_Store
+
+# === VSCode ===
+.vscode/
+
+# === Testing / Coverage ===
+coverage/
+*.lcov
+
+# === Python / Django ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+
+# === Django Migrations (optional to exclude) ===
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py
+
+# === Django Secret Files ===
+*.env
+secrets.json
+
+# === Compiled Static Files (Optional) ===
+staticfiles/
+static/
+
+# === Pipenv / Poetry (if used) ===
+Pipfile.lock
+poetry.lock
+
+# === JetBrains IDE ===
+.idea/
